@@ -26,6 +26,7 @@ services:
     image: redis
     expose:
       - "6379"
+    constraint:provider==digitalocean
 
   db:
     image: postgres:9.4
