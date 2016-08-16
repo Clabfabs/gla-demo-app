@@ -20,6 +20,7 @@ services:
     environment:
       - REDIS_HOST=redis
       - DB_HOST=db
+    constraint:provider==digitalocean
 
 
   redis:
@@ -30,3 +31,4 @@ services:
 
   db:
     image: postgres:9.4
+    constraint:provider==digitalocean
