@@ -25,7 +25,7 @@ services:
       - constraint:provider==digitalocean 
 
   redis:
-    image: redis
+    image: redis:32bit
     expose:
       - "6379"
     environment:
