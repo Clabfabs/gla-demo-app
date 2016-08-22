@@ -2,7 +2,7 @@ version: "2"
 
 services:
   voting-app:
-    image: clabs/voting-app
+    image: glapp/voting-app
     ports:
       - "80"
     environment:
@@ -10,7 +10,7 @@ services:
       - constraint:provider==amazonec2
 
   result-app:
-    image: clabs/result-app
+    image: glapp/result-app
     ports:
       - "80"
     environment:
@@ -18,7 +18,7 @@ services:
       - constraint:provider==digitalocean
 
   worker:
-    image: clabs/worker
+    image: glapp/worker
     environment:
       - REDIS_HOST=redis
       - DB_HOST=db
