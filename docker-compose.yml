@@ -7,7 +7,7 @@ services:
       - "80"
     environment:
       - REDIS_HOST=redis
-      - constraint:provider==digitalocean
+      - constraint:provider==amazonec2
       - constraint:tier==1
 
 
