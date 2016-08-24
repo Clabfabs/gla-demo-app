@@ -7,7 +7,9 @@ services:
       - "80"
     environment:
       - REDIS_HOST=redis
-      - constraint:provider==amazonec2
+      - constraint:provider==digitalocean
+      - constraint:tier==1
+
 
   result-app:
     image: glapp/result-app
