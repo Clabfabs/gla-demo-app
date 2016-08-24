@@ -22,7 +22,7 @@ services:
     environment:
       - REDIS_HOST=redis
       - DB_HOST=db
-      - constraint:provider==amazonec2 
+      - constraint:provider==digitalocean 
 
   redis:
     image: redis:32bit
